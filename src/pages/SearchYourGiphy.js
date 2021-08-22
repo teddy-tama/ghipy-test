@@ -48,7 +48,7 @@ function SearchYourGiphy() {
                     (gifs.length === 0) ? false
                     :
                     gifs.map(gif => (
-                        <div className="col-12 col-md-6 col-lg-4 w-400 w-md-150 w-lg-75 h-250 h-md-125 h-lg-75 card-body">
+                        <div key={gif.id} className="col-12 col-md-6 col-lg-4 w-400 w-md-150 w-lg-75 h-250 h-md-125 h-lg-75 card-body">
                             <img className="rounded-3" style={{ objectFit: 'cover', width: '100%', height: '240px' }} src={gif.images.fixed_height.url} alt=""  />
                         </div>
                     ))
